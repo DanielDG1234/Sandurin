@@ -65,6 +65,16 @@ public class Figuras {
 	double alturaTriangulo = scanner.nextDouble();
 	double areaTriangulo = calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
 	System.out.println("Área del triángulo: " + areaTriangulo);
+	
+	// Calcular área de un trapecio
+        System.out.print("Ingrese la longitud de la base mayor del trapecio: ");
+        double baseMayorTrapecio = scanner.nextDouble();
+        System.out.print("Ingrese la longitud de la base menor del trapecio: ");
+        double baseMenorTrapecio = scanner.nextDouble();
+        System.out.print("Ingrese la altura del trapecio: ");
+        double alturaTrapecio = scanner.nextDouble();
+        double areaTrapecio = calcularAreaTrapecio(baseMayorTrapecio, baseMenorTrapecio, 	alturaTrapecio);
+        System.out.println("Área del trapecio: " + areaTrapecio);
 
 	scanner.close();
         
@@ -134,5 +144,11 @@ public class Figuras {
     	// El área de un triángulo es (base * altura) / 2
     	return (base * altura) / 2;
 }
+
+	// Método para calcular el área de un trapecio
+        private static double calcularAreaTrapecio(double baseMayor, double baseMenor, double altura) {
+        // El área de un trapecio es ((baseMayor + baseMenor) / 2) * altura
+        return ((baseMayor + baseMenor) / 2) * altura;
+    }
     
 }
