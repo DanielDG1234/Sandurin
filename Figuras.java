@@ -28,6 +28,22 @@ public class Figuras {
         double alturaCilindro = scanner.nextDouble();
         double areaCilindro = calcularAreaCilindro(radioCilindro, alturaCilindro);
         System.out.println("Área del cilindro: " + areaCilindro);
+        
+        // Calcular área de una pirámide de base cuadrada
+        System.out.print("Ingrese la longitud del lado de la base de la pirámide: ");
+        double ladoBasePiramide = scanner.nextDouble();
+        System.out.print("Ingrese la altura de la pirámide: ");
+        double alturaPiramide = scanner.nextDouble();
+        double areaPiramide = calcularAreaPiramide(ladoBasePiramide, alturaPiramide);
+        System.out.println("Área de la pirámide: " + areaPiramide);
+        
+        // Calcular área de un rombo
+        System.out.print("Ingrese la longitud de la diagonal mayor del rombo: ");
+        double diagonalMayorRombo = scanner.nextDouble();
+        System.out.print("Ingrese la longitud de la diagonal menor del rombo: ");
+        double diagonalMenorRombo = scanner.nextDouble();
+        double areaRombo = calcularAreaRombo(diagonalMayorRombo, diagonalMenorRombo);
+        System.out.println("Área del rombo: " + areaRombo);
 
         scanner.close();
     }
@@ -72,5 +88,10 @@ public class Figuras {
 
         // El área total es la suma del área de la base y el área lateral
         return areaBase + areaLateral;
+    }
+    
+    private static double calcularAreaRombo(double diagonalMayor, double diagonalMenor) {
+        // El área de un rombo es (diagonalMayor * diagonalMenor) / 2
+        return (diagonalMayor * diagonalMenor) / 2;
     }
 }
