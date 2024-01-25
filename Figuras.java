@@ -50,13 +50,23 @@ public class Figuras {
 	double ladoPentagono = scanner.nextDouble();
 	double areaPentagono = calcularAreaPentagono(ladoPentagono);
 	System.out.println("Área del pentágono: " + areaPentagono);
-        scanner.close();
+
         
         // Calcular área de un hexágono
         System.out.print("Ingrese la longitud del lado del hexágono: ");
         double ladoHexagono = scanner.nextDouble();
         double areaHexagono = calcularAreaHexagono(ladoHexagono);
         System.out.println("Área del hexágono: " + areaHexagono);
+	
+	// Calcular área de un triángulo
+	System.out.print("Ingrese la longitud de la base del triángulo: ");
+	double baseTriangulo = scanner.nextDouble();
+	System.out.print("Ingrese la altura del triángulo: ");
+	double alturaTriangulo = scanner.nextDouble();
+	double areaTriangulo = calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
+	System.out.println("Área del triángulo: " + areaTriangulo);
+
+	scanner.close();
         
     }
 
@@ -118,5 +128,11 @@ public class Figuras {
         // El área de un hexágono regular es (3 * sqrt(3) * lado^2) / 2
         return (3 * Math.sqrt(3) * Math.pow(lado, 2)) / 2;
     }
+    
+    // Método para calcular el área de un triángulo
+    private static double calcularAreaTriangulo(double base, double altura) {
+    	// El área de un triángulo es (base * altura) / 2
+    	return (base * altura) / 2;
+}
     
 }
