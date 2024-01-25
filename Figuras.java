@@ -21,6 +21,14 @@ public class Figuras {
         double areaRectangulo = calcularAreaRectangulo(longitudRectangulo, anchuraRectangulo);
         System.out.println("Área del rectángulo: " + areaRectangulo);
 
+        // Calcular área de un cilindro
+        System.out.print("Ingrese el radio del cilindro: ");
+        double radioCilindro = scanner.nextDouble();
+        System.out.print("Ingrese la altura del cilindro: ");
+        double alturaCilindro = scanner.nextDouble();
+        double areaCilindro = calcularAreaCilindro(radioCilindro, alturaCilindro);
+        System.out.println("Área del cilindro: " + areaCilindro);
+
         scanner.close();
     }
 
@@ -32,5 +40,13 @@ public class Figuras {
     // Método para calcular el área de un rectángulo
     private static double calcularAreaRectangulo(double longitud, double anchura) {
         return longitud * anchura;
+    }
+
+    // Método para calcular el área de un cilindro
+    private static double calcularAreaCilindro(double radio, double altura) {
+        // El área de un cilindro es la suma del área de dos círculos (las bases) y el área de un rectángulo (la superficie lateral)
+        double areaBases = 2 * calcularAreaCirculo(radio);
+        double areaLateral = 2 * Math.PI * radio * altura;
+        return areaBases + areaLateral;
     }
 }
