@@ -44,12 +44,19 @@ public class Figuras {
         double diagonalMenorRombo = scanner.nextDouble();
         double areaRombo = calcularAreaRombo(diagonalMayorRombo, diagonalMenorRombo);
         System.out.println("Área del rombo: " + areaRombo);
+        
 	// Calcular área de un pentágono
 	System.out.print("Ingrese la longitud del lado del pentágono: ");
 	double ladoPentagono = scanner.nextDouble();
 	double areaPentagono = calcularAreaPentagono(ladoPentagono);
 	System.out.println("Área del pentágono: " + areaPentagono);
         scanner.close();
+        
+        // Calcular área de un hexágono
+        System.out.print("Ingrese la longitud del lado del hexágono: ");
+        double ladoHexagono = scanner.nextDouble();
+        double areaHexagono = calcularAreaHexagono(ladoHexagono);
+        System.out.println("Área del hexágono: " + areaHexagono);
         
     }
 
@@ -99,9 +106,17 @@ public class Figuras {
         // El área de un rombo es (diagonalMayor * diagonalMenor) / 2
         return (diagonalMayor * diagonalMenor) / 2;
     }
+    
     // Método para calcular el área de un pentágono
     private static double calcularAreaPentagono(double lado) {
     	// El área de un pentágono regular es (1/4) * sqrt(5 * (5 + 2 * sqrt(5))) * lado^2
     	return 0.25 * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(lado, 2);
 }
+
+   // Método para calcular el área de un hexágono regular
+    private static double calcularAreaHexagono(double lado) {
+        // El área de un hexágono regular es (3 * sqrt(3) * lado^2) / 2
+        return (3 * Math.sqrt(3) * Math.pow(lado, 2)) / 2;
+    }
+    
 }
