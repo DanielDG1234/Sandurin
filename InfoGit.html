@@ -148,6 +148,16 @@
 
 	<p>Para subir todas tus etiquetas, puede escribir el comando:</p>
 	<pre><code>git push REMOTE-NAME --tags</code></pre>
+	
+	<h2>Eliminar una etiqueta o rama remota</h2>
+
+	<p>La sintaxis para borrar una rama es un poco críptica a primera vista:</p>
+	<pre><code>git push REMOTE-NAME :BRANCH-NAME</code></pre>
+
+	<p>Nota que hay un espacio antes de los dos puntos. El comando se parece a los mismos pasos que realizaría para cambiar el nombre de una rama. Pero aquí le
+	 indica a Git que no inserte nada en <code>BRANCH-NAME</code> en <code>REMOTE-NAME</code>. Por este motivo, <code>git push</code> elimina la rama en el
+	 repositorio remoto.</p>
+
 
      
 </body>
