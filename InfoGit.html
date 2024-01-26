@@ -121,6 +121,17 @@
 		<code>git push REMOTE-NAME BRANCH-NAME</code>
 
 	<p>Por ejemplo, normalmente se ejecuta <code>git push origin main</code> para insertar los cambios locales en el repositorio en línea.</p>
+	
+	
+	<h2>Renombrar ramas</h2>
+
+	<p>Para cambiar el nombre de una rama, tendría que usar el mismo comando <code>git push</code>, pero agregar un argumento más: el nombre de la nueva rama.
+	 Por ejemplo:</p>
+
+	<code>git push REMOTE-NAME LOCAL-BRANCH-NAME:REMOTE-BRANCH-NAME</code>
+
+	<p>Esto inserta <em>LOCAL-BRANCH-NAME</em> en <em>REMOTE-NAME</em>, pero se cambia el nombre a <em>REMOTE-BRANCH-NAME</em>.</p>
+
      
 </body>
 </html>
