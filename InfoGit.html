@@ -137,6 +137,17 @@
 	<p>Si la copia local de un repositorio está desincronizada, o "atrasada", con respecto al repositorio ascendente al que se realiza la inserción, recibirá un
 	 mensaje en el que se indica <em>non-fast-forward updates were rejected</em>. Esto significa que debe recuperar los cambios ascendentes antes de poder
 	 insertar los cambios locales.</p>
+	 
+	 <h2>Subir etiquetas</h2>
+
+	<p>De manera predeterminada, y sin parámetros adicionales, <code>git push</code> envía todas las ramas que coinciden para que tengan el mismo nombre que las
+	 ramas remotas.</p>
+
+	<p>Para subir una etiqueta única, puedes emitir el mismo comando que al subir una rama:</p>
+	<pre><code>git push REMOTE-NAME TAG-NAME</code></pre>
+
+	<p>Para subir todas tus etiquetas, puede escribir el comando:</p>
+	<pre><code>git push REMOTE-NAME --tags</code></pre>
 
      
 </body>
