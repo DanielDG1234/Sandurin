@@ -1,2 +1,4 @@
-Descripción del proceso de Figuras.java
+Rama de José Luis Sánchez.
+
+He colaborado en el proyecto de HTML y CSS.
 
