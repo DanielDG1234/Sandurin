@@ -67,5 +67,43 @@
     <p>Para ver los planes y costos de GitHub, consulte <a href="https://github.com/pricing" target="_blank">GitHub Pricing</a>. Para obtener información comparativa
      entre GitHub Enterprise y otras opciones, consulte <a href="#comparacion-github">Comparación de GitHub con otras soluciones de DevOps</a>.</p>
      
+     <h2>GitHub y la línea de comandos</h2>
+     
+	<h3>Comandos básicos de Git</h3>
+
+	<p>Para utilizar Git, los desarrolladores utilizan comandos específicos para copiar, crear, cambiar y combinar el código. Estos comandos pueden ejecutarse
+	directamente desde la línea de comandos o utilizando una aplicación como GitHub Desktop. Aquí tienes algunos comandos comunes para utilizar Git:</p>
+
+<ul>
+    <li><code>git init</code> inicializa un repositorio nuevo de Git y comienza a supervisar el directorio existente. Este agrega una subcarpeta oculta dentro del
+     directorio existente que hospeda la estructura de datos interna que se requiere para el control de versiones.</li>
+
+    <li><code>git clone</code> crea una copia local de un proyecto que ya existe remotamente. El clon incluye todos los archivos, historial y ramas del proyecto.
+    </li>
+
+    <li><code>git add</code> almacena provisionalmente un cambio. Git rastrea los cambios que se hacen a la base de código de un desarrollador, pero es necesario
+     probarlos y tomar una captura de pantalla de ellos para incluirla en el historial del proyecto. Este comando realiza pruebas, la primera parte de este proceso
+     de dos pasos. Cualquier cambio que se pruebe, se convertirá en parte de la siguiente captura de pantalla y también del historial del proyecto. Las pruebas y
+     confirmaciones por separado otorgan a los desarrolladores el control completo sobre el historial y sobre el proyecto sin cambiar la forma en la que codifican
+     y trabajan.</li>
+
+    <li><code>git commit</code> guarda la instantánea del historial del proyecto y completa el proceso de seguimiento de los cambios. En resumen, una confirmación
+    funciona tal como el tomar una fotografía. Todo lo que se haya almacenado provisionalmente con git add pasará a formar parte de la instantánea con git commit.
+    </li>
+
+    <li><code>git status</code> muestra el estado de los cambios como sin seguimiento, modificados o almacenados provisionalmente.</li>
+
+    <li><code>git branch</code> muestra las ramas en las que se trabaja localmente.</li>
+
+    <li><code>git merge</code> combina las líneas de desarrollo. Este comando habitualmente se utiliza para combinar los cambios que se realizan en dos ramas
+     distintas. Por ejemplo, un desarrollador podría hacer una fusión cuando necesite combinar los cambios de una rama de característica en la rama de desarrollo
+     principal.</li>
+
+    <li><code>git pull</code> actualiza la línea de desarrollo local con actualizaciones de sus contrapartes remotas. Los desarrolladores utilizan este comando si un
+     compañero de equipo hizo confirmaciones en una rama en un repositorio remoto y quieren reflejarlos en su ambiente local.</li>
+
+    <li><code>git push</code> actualiza el repositorio remoto con las confirmaciones realizadas localmente en una rama.</li>
+</ul>
+     
 </body>
 </html>
