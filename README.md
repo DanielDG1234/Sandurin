@@ -1,7 +1,4 @@
-***GESTION DE REPOSITORIO***
+**RAMA DE FUSION DEL PROYECTO**
 
-Proyecto realizado por **Daniel Marin**, **Daniel Duque** y **Jose Luis Sánchez**.
+En esta rama se van a encontrar **commits** o modificaciones sobre un proyecto de **Figuras Geométricas**, además se encontrará la evolución de un documento de **html** y de **css**, aquí se subirán las modificaciones de los 3 participantes del grupo, una vez que se haya terminado el proyecto de mandará a la rama **Master/Main**.
 
-Realizamos para la asignatura de ***Entornos de desarrollo*** un proyecto entre ramas combinando un repositorio de **GitHub** con un repositorio local,
-para ello nos basaremos en un archivo de java sobre la realización de figuras geométricas, estas figuras irán aumentado según se vayan haciendo los commits
-en sus respectivas ramas. Finalmente se fusinará todo para dejar el trabajo final en la rama **main**.
