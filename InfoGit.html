@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acerca del control de versiones y de Git</title>
+</head>
+<body>
+   <h1>Acerca del control de versiones y de Git</h1>
+
+    <p>Un sistema de control de versiones o VCS (Version Control System, por sus siglas en inglés), rastrea el historial de cambios conforme las personas y los
+     equipos colaboran juntos en los proyectos. Conforme los desarrolladores hacen cambios al proyecto, cualquier versión anterior de este puede recuperarse en
+     cualquier momento.</p>
+
+    <p>Los desarrolladores pueden revisar el historial de proyectos para averiguar:</p>
+    
+    <ul>
+        <li>¿Qué cambios se hicieron?</li>
+        <li>¿Quién los hizo?</li>
+        <li>¿Cuándo se hicieron?</li>
+        <li>¿Por qué se necesitaban?</li>
+    </ul>
+
+    <p>Los VCS le proporcionan a cada contribuyente una vista consistente y unificada de un proyecto, lo cual muestra el trabajo que ya está en progreso. El ver un
+     historial de cambios transparente, quién los hizo y cómo contribuyen al desarrollo de un proyecto, ayuda a que los miembros de los equipos se alineen mientras
+      trabajan independientemente.</p>
+
+    <p>En un sistema de control de versiones distribuido, cada desarrollador tiene una copia integral del proyecto y del historial del mismo. A diferencia de los  
+     sistemas de control de versiones centralizados populares, los DVCS necesitan una conexión constante a un repositorio central. Git es el sistema de control de
+     versiones distribuido más popular. Git se utiliza habitualmente tanto para el desarrollo de proyectos de código abierto como comerciales y tiene beneficios
+     significativos para los individuos, equipos y negocios.</p>
+
+    <ul>
+        <li>Git permite que los desarrolladores vean la línea de tiempo completa para los cambios, decisiones y progresión de cualquier proyecto en un solo lugar.
+         Desde el momento en el que acceden al historial de un proyecto, el desarrollador tiene todo el contexto que necesitan para entenderlo y comenzar a
+         contribuir.</li>
+        <li>Los desarrolladores trabajan en todos los husos horarios. Con un DVCS como Git, las colaboraciones pueden tomar lugar en cualquier momento, mientras se
+         mantiene la integridad del código fuente. Al utilizar las ramas, los desarrolladores pueden proponer cambios al código de producción de forma segura.</li>
+        <li>Los negocios que utilizan Git pueden derribar las barreras de comunicación entre los equipos y mantenerlos enfocados en que realicen su mejor trabajo.
+         Además, Git permite alinear a expertos a lo largo de los negocios para que colaboren en los proyectos principales.</li>
+    </ul>
+    
+    <h2>Acerca de los repositorios</h2>
+
+    <p>Un repositorio o proyecto de Git comprende toda la colección de archivos y carpetas asociados con un proyecto, en conjunto con el historial de revisión de cada
+     archivo. El historial del archivo se muestra como capturas de pantalla en el tiempo, las cuales se denominan "confirmaciones". Estas confirmaciones pueden
+     organizarse en varias líneas de desarrollo, llamadas "ramas". Ya que Git es un DVCS, los repositorios son unidades auto-contenidas y cualquiera que tenga una
+     copia del repositorio puede acceder a toda la base de código y a su historial. Utilizando la línea de comandos o cualquier otra interfaz de facilidad de uso,
+     un repositorio de Git también permite: interactuar con el historial, clonar el repositorio, crear ramas, confirmar, fusionar y comparar cambios entre las
+     versiones del código y más.</p>
+
+    <p>A través de plataformas como GitHub, Git también proporciona más oportunidades para la transparencia y colaboración en los proyectos. Los repositorios 
+     públicos
+     hacen que los equipos trabajen en conjunto para crear el mejor producto final posible.</p>
+     
+     <h2>Cómo funciona GitHub</h2>
+
+    <p>GitHub hospeda repositorios de Git y proporciona a los desarrolladores las herramientas para generar un código mejor mediante características de línea de
+     comandos, propuestas (debates en hilo), solicitudes de cambio, revisión de código o el uso de un conjunto de apps gratuitas y de pago en GitHub Marketplace. Con
+     las capas de colaboración tales como el flujo de GitHub, una comunidad de 100 millones de desarrolladores y un ecosistema con cientos de integraciones, GitHub
+     cambia la forma en la que se crea el software.</p>
+
+    <p>GitHub crea una colaboración directamente en el proceso de desarrollo. El trabajo se organiza en los repositorios donde los desarrolladores pueden describir
+     los requisitos o la dirección y marcar las expectativas para los miembros de los equipos. Posteriormente, utilizando el flujo de GitHub, los desarrolladores
+     simplemente crean una rama para trabajar en las actualizaciones, confirmar cambios para guardarlos, abrir una solicitud de cambios para proponerlos y debatirlos
+     y fusionar solicitudes de cambio una vez que todos estén de acuerdo. Para obtener más información, vea <a href="#flujo-github">«Flujo de GitHub»</a>.</p>
+
+    <p>Para ver los planes y costos de GitHub, consulte <a href="https://github.com/pricing" target="_blank">GitHub Pricing</a>. Para obtener información comparativa
+     entre GitHub Enterprise y otras opciones, consulte <a href="#comparacion-github">Comparación de GitHub con otras soluciones de DevOps</a>.</p>
+     
+     <h2>GitHub y la línea de comandos</h2>
+     
+	<h3>Comandos básicos de Git</h3>
+
+	<p>Para utilizar Git, los desarrolladores utilizan comandos específicos para copiar, crear, cambiar y combinar el código. Estos comandos pueden ejecutarse
+	directamente desde la línea de comandos o utilizando una aplicación como GitHub Desktop. Aquí tienes algunos comandos comunes para utilizar Git:</p>
+
+<ul>
+    <li><code>git init</code> inicializa un repositorio nuevo de Git y comienza a supervisar el directorio existente. Este agrega una subcarpeta oculta dentro del
+     directorio existente que hospeda la estructura de datos interna que se requiere para el control de versiones.</li>
+
+    <li><code>git clone</code> crea una copia local de un proyecto que ya existe remotamente. El clon incluye todos los archivos, historial y ramas del proyecto.
+    </li>
+
+    <li><code>git add</code> almacena provisionalmente un cambio. Git rastrea los cambios que se hacen a la base de código de un desarrollador, pero es necesario
+     probarlos y tomar una captura de pantalla de ellos para incluirla en el historial del proyecto. Este comando realiza pruebas, la primera parte de este proceso
+     de dos pasos. Cualquier cambio que se pruebe, se convertirá en parte de la siguiente captura de pantalla y también del historial del proyecto. Las pruebas y
+     confirmaciones por separado otorgan a los desarrolladores el control completo sobre el historial y sobre el proyecto sin cambiar la forma en la que codifican
+     y trabajan.</li>
+
+    <li><code>git commit</code> guarda la instantánea del historial del proyecto y completa el proceso de seguimiento de los cambios. En resumen, una confirmación
+    funciona tal como el tomar una fotografía. Todo lo que se haya almacenado provisionalmente con git add pasará a formar parte de la instantánea con git commit.
+    </li>
+
+    <li><code>git status</code> muestra el estado de los cambios como sin seguimiento, modificados o almacenados provisionalmente.</li>
+
+    <li><code>git branch</code> muestra las ramas en las que se trabaja localmente.</li>
+
+    <li><code>git merge</code> combina las líneas de desarrollo. Este comando habitualmente se utiliza para combinar los cambios que se realizan en dos ramas
+     distintas. Por ejemplo, un desarrollador podría hacer una fusión cuando necesite combinar los cambios de una rama de característica en la rama de desarrollo
+     principal.</li>
+
+    <li><code>git pull</code> actualiza la línea de desarrollo local con actualizaciones de sus contrapartes remotas. Los desarrolladores utilizan este comando si un
+     compañero de equipo hizo confirmaciones en una rama en un repositorio remoto y quieren reflejarlos en su ambiente local.</li>
+
+    <li><code>git push</code> actualiza el repositorio remoto con las confirmaciones realizadas localmente en una rama.</li>
+</ul>
+
+	<h1>Subir confirmaciones de cambios a un repositorio remoto</h1>
+	<h2>Acerca de git push</h2>
+
+	<p>El comando <code>git push</code> toma dos argumentos:</p>
+
+	<ul>
+   		<li>Un nombre remoto, por ejemplo, <em>origin</em></li>
+    		<li>Un nombre de rama, por ejemplo, <em>main</em></li>
+	</ul>
+
+	<p>Por ejemplo:</p>
+
+		<code>git push REMOTE-NAME BRANCH-NAME</code>
+
+	<p>Por ejemplo, normalmente se ejecuta <code>git push origin main</code> para insertar los cambios locales en el repositorio en línea.</p>
+	
+	
+	<h2>Renombrar ramas</h2>
+
+	<p>Para cambiar el nombre de una rama, tendría que usar el mismo comando <code>git push</code>, pero agregar un argumento más: el nombre de la nueva rama.
+	 Por ejemplo:</p>
+
+	<code>git push REMOTE-NAME LOCAL-BRANCH-NAME:REMOTE-BRANCH-NAME</code>
+
+	<p>Esto inserta <em>LOCAL-BRANCH-NAME</em> en <em>REMOTE-NAME</em>, pero se cambia el nombre a <em>REMOTE-BRANCH-NAME</em>.</p>
+	
+	<h2>Abordar errores sin avance rápido</h2>
+
+	<p>Si la copia local de un repositorio está desincronizada, o "atrasada", con respecto al repositorio ascendente al que se realiza la inserción, recibirá un
+	 mensaje en el que se indica <em>non-fast-forward updates were rejected</em>. Esto significa que debe recuperar los cambios ascendentes antes de poder
+	 insertar los cambios locales.</p>
+	 
+	 <h2>Subir etiquetas</h2>
+
+	<p>De manera predeterminada, y sin parámetros adicionales, <code>git push</code> envía todas las ramas que coinciden para que tengan el mismo nombre que las
+	 ramas remotas.</p>
+
+	<p>Para subir una etiqueta única, puedes emitir el mismo comando que al subir una rama:</p>
+	<pre><code>git push REMOTE-NAME TAG-NAME</code></pre>
+
+	<p>Para subir todas tus etiquetas, puede escribir el comando:</p>
+	<pre><code>git push REMOTE-NAME --tags</code></pre>
+	
+	<h2>Eliminar una etiqueta o rama remota</h2>
+
+	<p>La sintaxis para borrar una rama es un poco críptica a primera vista:</p>
+	<pre><code>git push REMOTE-NAME :BRANCH-NAME</code></pre>
+
+	<p>Nota que hay un espacio antes de los dos puntos. El comando se parece a los mismos pasos que realizaría para cambiar el nombre de una rama. Pero aquí le
+	 indica a Git que no inserte nada en <code>BRANCH-NAME</code> en <code>REMOTE-NAME</code>. Por este motivo, <code>git push</code> elimina la rama en el
+	 repositorio remoto.</p>
+
+
+     
+</body>
+</html>
