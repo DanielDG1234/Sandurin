@@ -1,5 +1,3 @@
-#Rama Daniel Marín Román
+**RAMA DE FUSION DEL PROYECTO**
 
-Hola buenas soy **Daniel Marín Román** y voy a trabajar sobre la rama: *DanielMR*.
-
-En esta rama se van a encontrar **commits** o modificaciones sobre un proyecto de **Figuras Geométricas**, además se encontrará la evolución de un documento de **html** y de **css**.
+En esta rama se van a encontrar **commits** o modificaciones sobre un proyecto de **Figuras Geométricas**, además se encontrará la evolución de un documento de **html** y de **css**, aquí se subirán las modificaciones de los 3 participantes del grupo, una vez que se haya terminado el proyecto de mandará a la rama **Master/Main**.
