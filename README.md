@@ -1,7 +1,7 @@
-***GESTION DE REPOSITORIO***
+Rama Personal de trabajo de Daniel Duque.
 
-Proyecto realizado por **Daniel Marin**, **Daniel Duque** y **Jose Luis Sánchez**.
 
-Realizamos para la asignatura de ***Entornos de desarrollo*** un proyecto entre ramas combinando un repositorio de **GitHub** con un repositorio local,
-para ello nos basaremos en un archivo de java sobre la realización de figuras geométricas, estas figuras irán aumentado según se vayan haciendo los commits
-en sus respectivas ramas. Finalmente se fusinará todo para dejar el trabajo final en la rama **main**.
+Realizamos con Daniel Marin el fichero Figuras.java.
+
+Tambien realizo el style.css con el colaborador Jose SM
+
